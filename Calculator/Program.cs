@@ -18,7 +18,8 @@
                 Console.WriteLine("\nВыберите операцию: ");
                 string operation = Console.ReadLine();
                 int операция = Convert.ToInt32(operation);
-            do
+
+            while (операция != 9)
             {
 
                 // для первых двуз операций нужны оба числа
@@ -90,14 +91,12 @@
                             break;
                     }
                 }
-                Console.WriteLine("\nВыберите операцию: ");
-                string operation_1 = Console.ReadLine();
-                int операция_1 = Convert.ToInt32(operation_1);
+                    Console.WriteLine("\nВыберите операцию: ");
+                    string operation_1 = Console.ReadLine();
+                    int операция_1 = Convert.ToInt32(operation_1);
 
-                операция = операция_1;
+                    операция = операция_1;
             }
-            while (операция != 9);
-            Console.WriteLine("\nВы выбрали выход из программы");
         }
     }
 }
